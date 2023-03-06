@@ -25,7 +25,7 @@ public class MainActivityNavView extends AppCompatActivity implements Navigation
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarNavView);
         setSupportActionBar(toolbar);
 
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.iconhome);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.icon_menu);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         navView = (NavigationView)findViewById(R.id.nav_view);
@@ -42,31 +42,28 @@ public class MainActivityNavView extends AppCompatActivity implements Navigation
                 return super.onOptionsItemSelected(item);
           }
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menuactionbar , menu);
         return true;
     }
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         boolean fragmentTransaction = false;
         Fragment fragment = null;
         switch (menuItem.getItemId()) {
-            case R.id.menu_seccion_1:
+            case R.id.todos_recibidos:
                 fragment = new FragmentCliente();
                fragmentTransaction = true;
                 break;
-            case R.id.menu_seccion_2:
+            case R.id.principal:
                 fragment = new FragmentFactura();
                 fragmentTransaction = true;
                 break;
-            case R.id.menu_seccion_3:
+            case R.id.social:
                 fragment = new FragmentProducto();
                 fragmentTransaction = true;
                 break;
-
         }
         if(fragmentTransaction) {
             getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment).commit();

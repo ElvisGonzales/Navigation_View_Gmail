@@ -2,31 +2,109 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/menu_seccion_1"
-            android:icon="@drawable/iconmenu"
-            android:title="Sección 1"/>
+            android:id="@+id/todos_recibidos"
+            android:icon="@drawable/icon_todos"
+            android:scaleType="center"
+            android:title="Todos los Recibidos"/>
+    </group>
+    <group android:checkableBehavior="single">
         <item
-            android:id="@+id/menu_seccion_2"
-            android:icon="@drawable/iconmenu"
-            android:title="Sección 2"/>
+            android:id="@+id/principal"
+            android:icon="@drawable/icon_principal"
+            android:scaleType="center"
+            android:title="Principal"/>
         <item
-            android:id="@+id/menu_seccion_3"
-            android:icon="@drawable/iconmenu"
-            android:title="Sección 3"/>
+            android:id="@+id/social"
+            android:icon="@drawable/icon_social"
+            android:scaleType="center"
+            android:title="Social"/>
+        <item
+            android:id="@+id/promociones"
+            android:icon="@drawable/icon_promociones"
+            android:title="Promociones"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/destacados"
+            android:icon="@drawable/icon_destacados"
+            android:scaleType="center"
+            android:title="Destacados"/>
+        <item
+            android:id="@+id/propuestos"
+            android:icon="@drawable/icon_pospuestos"
+            android:scaleType="center"
+            android:title="Propuestos"/>
+        <item
+            android:id="@+id/importantes"
+            android:icon="@drawable/icon_importantes"
+            android:scaleType="center"
+            android:title="Importantes"/>
+        <item
+            android:id="@+id/enviados"
+            android:icon="@drawable/icon_enviados"
+            android:scaleType="center"
+            android:title="Enviados"/>
+        <item
+            android:id="@+id/programados"
+            android:icon="@drawable/icon_programados"
+            android:scaleType="center"
+            android:title="Programados"/>
+        <item
+            android:id="@+id/borradores"
+            android:icon="@drawable/icon_borradores"
+            android:scaleType="center"
+            android:title="Borradores"/>
+        <item
+            android:id="@+id/todo_el_correo"
+            android:icon="@drawable/icon_all_mail"
+            android:scaleType="center"
+            android:title="Todo el correo"/>
+        <item
+            android:id="@+id/spam"
+            android:icon="@drawable/icon_spam"
+            android:scaleType="center"
+            android:title="Spam"/>
+        <item
+            android:id="@+id/papelera"
+            android:icon="@drawable/icon_papelera"
+            android:scaleType="center"
+            android:title="Papelera"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/historial_conversaciones"
+            android:icon="@drawable/icon_unwanted"
+            android:scaleType="center"
+            android:title="Historial de conversaciones"/>
+        <item
+            android:id="@+id/unwanted"
+            android:icon="@drawable/icon_unwanted"
+            android:scaleType="center"
+            android:title="Unwanted"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/crear_documento_nuevo"
+            android:icon="@drawable/icon_crear_documento"
+            android:scaleType="center"
+            android:title="Crear documento nuevo"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/configuracion"
+            android:icon="@drawable/icon_setting"
+            android:scaleType="center"
+            android:title="Configuración"/>
+        <item
+            android:id="@+id/enviar_comentario"
+            android:icon="@drawable/icon_enviar_comentario"
+            android:scaleType="center"
+            android:title="Enviar comentario"/>
+        <item
+            android:id="@+id/ayuda"
+            android:icon="@drawable/icon_ayuda"
+            android:scaleType="center"
+            android:title="Ayuda"/>
     </group>
 
-    <item
-        android:id="@+id/navigation_subheader"
-        android:title="Otras Opciones">
-        <menu>
-            <item
-                android:id="@+id/menu_opcion_1"
-                android:icon="@drawable/iconmenu"
-                android:title="Opciones 1"/>
-            <item
-                android:id="@+id/menu_opcion_2"
-                android:icon="@drawable/iconmenu"
-                android:title="Opciones 2"/>
-        </menu>
-    </item>
 </menu>
